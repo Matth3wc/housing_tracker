@@ -15,7 +15,7 @@ def load_migration_from_excel(file_path):
     return df_long
 
 if __name__ == "__main__":
-    file_path = "data_pipeline/f8c13ca2-fd4c-4be0-81a1-e1908d1799ee.xlsx"
+    file_path = "/Users/mattthew/Documents/GitHub/housing_tracker/data_pipeline/undesa_pd_2024_ims_stock_by_sex_and_destination.xlsx"
     df = load_migration_from_excel(file_path)
     df.to_csv("data_pipeline/migration_flows.csv", index=False)
     print("✅ Migration data saved to CSV.")
